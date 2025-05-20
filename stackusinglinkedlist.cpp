@@ -38,3 +38,12 @@ public:
     }
 
     void pop()
+    {
+        if (isEmpty())
+        {
+            cout << "Stack is Empty" << endl;
+        }
+
+        cout << "Popped Value: " << top->data << endl;
+        top = top->next;
+    }
